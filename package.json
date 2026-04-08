@@ -1,0 +1,24 @@
+{
+  "name": "connecteat",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "dashboard",
+    "mobile",
+    "firebase/functions"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:dashboard": "npm --workspace dashboard run dev",
+    "build:dashboard": "npm --workspace dashboard run build",
+    "dev:mobile": "npm --workspace mobile run start",
+    "lint": "npm --workspace dashboard run lint"
+  },
+  "devDependencies": {
+    "expo": "^54.0.33"
+  },
+  "overrides": {
+    "react-native": "0.81.5",
+    "@react-native/codegen": "0.81.5"
+  }
+}

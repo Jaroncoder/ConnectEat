@@ -1,0 +1,26 @@
+{
+  "name": "connecteat-mobile",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --lan --port 8082 --clear",
+    "start:lan": "expo start --lan --port 8082 --clear",
+    "start:tunnel": "expo start --tunnel --port 8082 --clear",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "^54.0.0",
+    "expo-notifications": "~0.32.16",
+    "firebase": "^11.7.1",
+    "metro-runtime": "^0.84.2",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@expo/ngrok": "^4.1.3"
+  }
+}
